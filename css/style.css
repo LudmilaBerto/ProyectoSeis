@@ -142,5 +142,17 @@
 }
 
 
+/* COMIENDO A ESTILIZAR SECTION CINCO */
 
+.sectionCinco h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+.tarjetaPlaneta{
+    margin: 5px;
+    background-color: var(--ColorFondoCard);
+    color: var(--ColorPrimario);
+}
 

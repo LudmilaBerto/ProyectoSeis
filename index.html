@@ -10,34 +10,34 @@
 </head>
 <body class="body">
     <!-- COMIENZA EL HEADER -->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body">
-            <div class="container-fluid container text-center">
-                    <h1 class="logo-star-wars">STAR WARS</h1>
-              <div class="container text-center collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link active navegacion" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link navegacion" href="#">Peliculas</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle navegacion" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Universo Star Wars
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item navegacion2" href="#">Personajes</a></li>
-                      <li><a class="dropdown-item navegacion2" href="#">Naves Espaciales</a></li>
-                      <li><a class="dropdown-item navegacion2" href="#">Planetas</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link navegacion" href="#">Contacto</a>
-                  </li>
-                </ul>
-               
-              </div>
+    <header class="header ">
+        <nav class="navbar navbar-expand-lg bg-body-dark ">
+            <div class="row container-fluid  contenedorNav">
+                    <h1 class="col-4 logo-star-wars">STAR WARS</h1>
+                <div class="col-6 container text-center collapse navbar-collapse" id="navbarScroll">
+                  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                      <a class="nav-link navegacion" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link navegacion" href="#">Peliculas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle navegacion" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Universo Star Wars
+                      </a>
+                      <ul class="dropdown-menu paginas">
+                        <li><a class="dropdown-item navegacion" href="#">Personajes</a></li>
+                        <li><a class="dropdown-item navegacion" href="#">Naves Espaciales</a></li>
+                        <li><a class="dropdown-item navegacion" href="#">Planetas</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link navegacion" href="#">Contacto</a>
+                    </li>
+                  </ul>
+                
+                </div>
             </div>
         </nav>
           
@@ -50,14 +50,15 @@
 
         <!-- COMIENZA SECTION UNO (HERO) -->
 
-        <section class="sectionUno-hero">
-            <div class="conteiner-H1-Buscador">
+        <section class=".container-fluid sectionUno-hero">
+          
+            <div class="col-7 H1-Buscador">
 
                 <h1>Sumérgete en las épicas películas de Star Wars y conoce a fondo a sus personajes, naves y planetas, y mucho más</h1>
 
                 <form class="form buscador">
-                    <input type="search" class="btn btn" placeholder="Buscar">
-                    <button type="submit"><i class="bi bi-search"></i></button>
+                    <input type="search" id="inputBuscar" class=" inputBuscar" placeholder="Buscar Star Wars">
+                    <button type="submit" class="BotonBuscar" id="BotonBuscar"><i class="bi bi-search iconoBuscar"></i></button>
                 </form>
 
             </div>
@@ -69,64 +70,64 @@
 
         <!-- COMIENZA SECTION DOS -->
 
-        <section class="sectionDos">
+        <section class="text-center sectionDos">
 
             <h2>Todas las Películas de Star Wars</h2>
 
-            <div class="row contenedor-card-peliculas">
-                <div class="card" style="width: 18rem;">
+            <div class="row justify-content-center contenedor-card-peliculas">
+                <div class="card cardPeli" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                   </div>
-                  <div class="card" style="width: 18rem;">
+                  <div class="card cardPeli" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                   </div>
-                  <div class="card" style="width: 18rem;">
+                  <div class="card cardPeli" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
 
-            <div class="row contenedor-card-peliculas">
-                    <div class="card" style="width: 18rem;">
+            <div class="row justify-content-center contenedor-card-peliculas">
+                    <div class="card cardPeli" style="width: 18rem;">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
-                      <div class="card" style="width: 18rem;">
+                      <div class="card cardPeli" style="width: 18rem;">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
-                      <div class="card" style="width: 18rem;">
+                      <div class="card cardPeli" style="width: 18rem;">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
             </div>
 
-            <div class="row contenedor-card-peliculas">
-                <div class="card" style="width: 18rem;">
+            <div class="row justify-content-center contenedor-card-peliculas">
+                <div class="card cardPeli" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                   </div>
-                  <div class="card" style="width: 18rem;">
+                  <div class="card cardPeli" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                   </div>
-                  <div class="card" style="width: 18rem;">
+                  <div class="card cardPeli" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -143,11 +144,11 @@
 
         <!-- COMIENZA SECTION TRES -->
 
-        <section class="sectionTres">
+        <section class="text-center sectionTres">
 
             <h2 class="titulo-personajes">Personajes de Star Wars</h2>
 
-            <div class="row contenedorPersonajes">
+            <div class="row justify-content-center contenedorPersonajes">
                 <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
                     <img src="..." class="card-img-top imagenPersonaje" alt="...">
                     <div class="card-body">
@@ -411,7 +412,7 @@
         <section class="sectionCinco">
             
             <h2>Planetas de Star Wars</h2>
-            
+
             <div class="row contenedorPlanetas">
                 <div class="col-4 card tarjetaPlaneta" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">

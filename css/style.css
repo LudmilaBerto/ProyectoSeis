@@ -156,3 +156,77 @@
     color: var(--ColorPrimario);
 }
 
+/* COMIENDO A ESTILIZAR SECTION SEIS */
+.sectionSeis{
+    max-width: 80%;
+}
+.sectionSeis h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+.sectionSeis p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/* Estilizo el formulario de contacto */
+
+.formularioDeContacto{
+    padding: 15px 80px;
+}
+
+.formularioDeContacto label{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.formularioDeContacto input{
+    font-family: "Roboto", sans-serif;
+    border: solid rgb(75, 74, 74) 1px;
+    font-size: 20px;
+    background-color: #1c2c3c74;
+    color: var(--ColorPrimario);
+    padding: 8px 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none
+
+
+}
+
+.formularioDeContacto textarea{
+    font-family: "Roboto", sans-serif;
+    border: solid rgb(75, 74, 74) 1px;
+    font-size: 20px;
+    background-color: #1c2c3c74;
+    color: var(--ColorPrimario);
+    padding: 8px 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btnEnviar{
+    font-family: "Roboto", sans-serif;
+    border: solid rgb(75, 74, 74) 1px;
+    font-size: 20px;
+    background-color: #1c2c3c;
+    color: var(--ColorPrimario);
+    padding: 8px 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.btnEnviar:hover{
+    background-color: #44596d;
+}

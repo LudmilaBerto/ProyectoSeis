@@ -120,7 +120,8 @@
 
 .tarjetaPersonajes{
     margin: 10px;
-
+    background-color: var(--ColorFondoCard);
+    color: var(--ColorPrimario);
 }
 
 

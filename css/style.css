@@ -96,7 +96,7 @@
 .sectionDos h2{
     font-family: "Roboto", sans-serif;
     font-size: 30px;
-    padding: 18px 0px;
+    padding: 20px 0px;
 }
 /* Centro las cards de las peliculas */
 .cardPeli{
@@ -113,7 +113,7 @@
 .sectionTres h2{
     font-family: "Roboto", sans-serif;
     font-size: 30px;
-    padding: 18px 0px;
+    padding: 20px 0px;
 }
 
 /* Centro las cards de las personajes */
@@ -125,7 +125,21 @@
 }
 
 
+/* COMIENZA SECTION CUATRO */
 
+.sectionCuatro h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+/* Estilizo las card de las naves */
+
+.tarjetaNave{
+    margin: 5px;
+    background-color: var(--ColorFondoCard);
+    color: var(--ColorPrimario);
+}
 
 
 

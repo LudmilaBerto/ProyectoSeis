@@ -61,7 +61,7 @@ function mostrarPersonajes(personajes){
 
 personajes()
 
-// Vinculo URL base de API star wars de Naves espaciales
+// Vinculo URL base de API star wars de Naves espaciales.
 
 function fetchNaves(){
     

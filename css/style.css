@@ -127,10 +127,13 @@
 
  }
 
+ /* estilizo card de peliculas */
+
  .contenedortarjetaPersonajes h3{
     font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
 
 
  }
@@ -150,6 +153,12 @@
 
 /* COMIENZA SECTION 3 - PERSONAJES */
 
+.sectionTres h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
 .contenedorPersonajes{
     display: flex;
     flex-direction: row;
@@ -157,13 +166,7 @@
     flex-wrap: wrap;
 }
 
-.sectionTres h2{
-    font-family: "Roboto", sans-serif;
-    font-size: 30px;
-    padding: 20px 0px;
-}
-
-/* Centro las cards de las personajes */
+/* Centro las cards de las personajes y estilizo */
 
 .tarjetaPersonaje{
     margin: 10px;
@@ -175,8 +178,9 @@
 }
 .tarjetaPersonaje h3{
     font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
 }
 .tarjetaPersonaje p{
     font-family: "Roboto", sans-serif;
@@ -193,13 +197,14 @@
     padding: 20px 0px;
 }
 
-/* Estilizo las card de las naves */
+/* Estilizo el contenedor de las tarjetas de las naves */
 .contenedorNaves{
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
+/* Estilizo las card de las naves */
 
 .tarjetaNave{
     margin: 5px;
@@ -211,8 +216,9 @@
 }
 .tarjetaNave h3{
     font-family: "Roboto", sans-serif;
-    text-decoration: underline;
-    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
     font-size: 22px;
     padding-bottom: 10px;
 }
@@ -225,18 +231,46 @@
 }
 
 
-/* COMIENDO A ESTILIZAR SECTION CINCO */
+/* COMIENDO A ESTILIZAR SECTION CINCO - PLANETAS*/
 
 .sectionCinco h2{
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     padding: 20px 0px;
 }
+/* Estilizo el contenedor de las tarjetas de los PLANETAS */
+
+.contenedorPlanetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* Estilizo las tarjetas de los PLANETAS */
+
 
 .tarjetaPlaneta{
     margin: 5px;
+    padding: 18px;
+    border-radius: 10px;
+    flex-basis: 19%;
     background-color: var(--ColorFondoCard);
     color: var(--ColorPrimario);
+}
+
+.tarjetaPlaneta h3{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.tarjetaPlaneta p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 /* COMIENDO A ESTILIZAR SECTION SEIS */

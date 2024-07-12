@@ -61,6 +61,8 @@ function mostrarPersonajes(personajes){
 
 personajes()
 
+// -----------------------------------------------------------------------------------------------
+
 // Vinculo URL base de API star wars de Naves espaciales.
 
 function fetchNaves(){
@@ -94,5 +96,43 @@ function mostrarNaves(Naves){
 }
 
 fetchNaves()
+
+// -----------------------------------------------------------------------------------------------
+
+// Vinculo URL base de API star wars de PLANETAS.
+
+function fetchPlanetas(){
+
+    fetch('https://swapi.dev/api/planets/')
+    .then(response=>response.json())
+    .then(response => mostrarPlanetas(response.results))
+
+}
+
+function mostrarPlanetas(planetas){
+    const tarjetaPlaneta=document.querySelector('#contenedor-planetas')
+
+
+    console.log(planetas)
+    for(let planeta of planetas){
+      
+        let gravedad= planeta.gravity==='N/A'? 'no hay datos definidos': planeta.gravity
+
+        tarjetaPlaneta.innerHTML+=`<div class="tarjetaPlaneta">
+                                <h3>${planeta.name}</h3>
+                                <p><b>Terreno: </b>${planeta.terrain}</p>
+                                <p><b>Superficie del Agua: </b>${planeta.surface_water}</p>
+                                <p><b>Periodo de Rotación: </b>${planeta.rotation_period}</p>
+                                <p><b>Población: </b>${planeta.population}</p>
+                                <p><b>Periodo Orbital: </b>${planeta.orbital_period}</p>
+                                <p><b>Gravedad: </b>${gravedad}</p>
+                                <p><b>Diametro: </b>${planeta.climate}</p>
+                                </div>`
+    }
+
+
+}
+
+fetchPlanetas()
 
 

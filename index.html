@@ -17,23 +17,23 @@
                 <div class="col-6 container text-center collapse navbar-collapse" id="navbarScroll">
                   <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                      <a class="nav-link navegacion" aria-current="page" href="#">Inicio</a>
+                      <a class="nav-link navegacion" aria-current="page" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link navegacion" href="#">Peliculas</a>
+                      <a class="nav-link navegacion" href="#peliculas">Peliculas</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle navegacion" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Universo Star Wars
                       </a>
                       <ul class="dropdown-menu paginas">
-                        <li><a class="dropdown-item navegacion" href="#">Personajes</a></li>
-                        <li><a class="dropdown-item navegacion" href="#">Naves Espaciales</a></li>
+                        <li><a class="dropdown-item navegacion" href="#personajes">Personajes</a></li>
+                        <li><a class="dropdown-item navegacion" href="#navesespaciales">Naves Espaciales</a></li>
                         <li><a class="dropdown-item navegacion" href="#">Planetas</a></li>
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link navegacion" href="#">Contacto</a>
+                      <a class="nav-link navegacion" href="#contacto">Contacto</a>
                     </li>
                   </ul>
                 
@@ -50,7 +50,7 @@
 
         <!-- COMIENZA SECTION UNO (HERO) -->
 
-        <section class=".container-fluid sectionUno-hero">
+        <section class=".container-fluid sectionUno-hero" id="inicio">
           
             <div class="col-7 H1-Buscador">
 
@@ -70,69 +70,17 @@
 
         <!-- COMIENZA SECTION DOS -->
 
-        <section class="sectionDos">
+        <section class="sectionDos" id="peliculas">
 
             <h2 class="text-center">Todas las Películas de Star Wars</h2>
 
-            <div class="row justify-content-center contenedor-card-peliculas">
-                <div class="card cardPeli" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card cardPeli" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card cardPeli" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
+            <div id="contenedorPeliculas" class="contenedorPeliculas">
 
-            <div class="row justify-content-center contenedor-card-peliculas">
-                    <div class="card cardPeli" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                      <div class="card cardPeli" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                      <div class="card cardPeli" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
+
             </div>
 
-            <div class="row justify-content-center contenedor-card-peliculas">
-                <div class="card cardPeli" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card cardPeli" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                  <div class="card cardPeli" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
+            
+            
 
                 
         
@@ -144,85 +92,13 @@
 
         <!-- COMIENZA SECTION TRES -->
 
-        <section class="sectionTres">
+        <section class="sectionTres" id="personajes">
 
             <h2 class="text-center titulo-personajes">Personajes de Star Wars</h2>
 
-            <div class="row justify-content-center contenedorPersonajes">
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                <div class="col-2 card tarjetaPersonajes" style="width: 18rem;">
-                    <img src="..." class="card-img-top imagenPersonaje" alt="...">
-                    <div class="card-body">
-                      <h5 class="NombrePersonaje">Nombre Personajes</h5>
-                    </div>
-                </div>
-                
-            </div>
+          <div id="contenedor-personajes" class="contenedorPersonajes" >
+
+          </div>
             
         </section>
 
@@ -230,178 +106,13 @@
 
         <!-- COMIENZA SECTION CUATRO -->
          
-        <section class="row justify-content-center sectionCuatro">
+        <section class="sectionCuatro" id="navesespaciales">
 
             <h2 class="text-center">Naves espaciales</h2>
 
-            <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
-              <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
-              <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
-              <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
-              <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
-              <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
-              <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
-              <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
-              <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
-              <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
-              <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
-              <div class="col-6 card mb-3 tarjetaNave" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title nombreNave">Card title</h5>
-                      <p class="card-text DescripcionNave">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ----------------------------------------------------------------- -->
+            <div id="contenedor-naves" class="contenedorNaves">
+
+            </div>
 
         </section>
 
@@ -409,7 +120,7 @@
 
         <!-- COMIENZA SECTION CINCO -->
 
-        <section class="sectionCinco">
+        <section class="sectionCinco" id="planetas">
             
             <h2 class="text-center">Planetas de Star Wars</h2>
 
@@ -464,7 +175,7 @@
 
         <!-- COMIENZA SECTION SEIS -->
 
-        <section class="container sectionSeis">
+        <section class="container sectionSeis" id="contacto">
             <h2 class="text-center">Contáctanos</h2>
             <p class="text-center">¿Tienes alguna pregunta sobre el universo Star Wars o nuestra página? No dudes en ponerte en contacto con nosotros.</p>
             

@@ -1,32 +1,3 @@
-// equis del input, que aparezca la equis cuando hay texto dentro del input y que desaparezca si no hay texto
-// 
-const equisInput=document.getElementById("equis-input");
-const inputBuscador=document.getElementById("inputBuscador");
-
-inputBuscador.addEventListener("keyup",()=>{
-    if(inputBuscador.value.length>0){
-        equisInput.style.display="block";
-    }
-    else{
-        equisInput.style.display="none";
-    }
-})
-
-// Con este evento: al hacer click, en la equis del input, se borra el texto dentro y desaparece el icono de la equis al mismo tiempo
-equisInput.addEventListener('click',()=>{
-    inputBuscador.value = "";
-    equisInput.style.display="none";
-
-})
-
-// buscador del input
-
-
-
-
-
-
-
 // Vinculo URL base de API star wars de Peliculas
 
 function peliculas() {
@@ -130,7 +101,6 @@ function mostrarPlanetas(planetas){
     const tarjetaPlaneta=document.querySelector('#contenedor-planetas')
 
 
-    console.log(planetas)
     for(let planeta of planetas){
       
         let gravedad= planeta.gravity==='N/A'? 'no hay datos definidos': planeta.gravity
@@ -151,5 +121,4 @@ function mostrarPlanetas(planetas){
 }
 
 fetchPlanetas()
-
 

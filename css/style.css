@@ -7,6 +7,7 @@
 :root{
     --ColorPrincipal:#000;
     --ColorPrimario: #ffffff;
+    --ColorSecundario:#1c2c3cc5;
     --ColorFondoCard:#232728;
 }
 .body{
@@ -30,6 +31,13 @@
 .navegacion{
     color: var(--ColorPrimario);
 }
+.navegacion:hover{
+    color: #ffffff;
+    background-color: var(--ColorSecundario);
+    border-radius: 8px;
+
+}
+
 
 .paginas{
     background-color: var(--ColorPrincipal);
@@ -61,7 +69,7 @@
 .H1-Buscador h1{
     font-family: "Barlow", sans-serif;
     font-weight: 300;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 /* Estilizo el input y el boton del buscador */
@@ -71,7 +79,7 @@
     height: 50px;
     background-color: #1c2c3cc5;
     padding: 5px;
-    margin-top: 15px;
+    margin-top: 50px;
     border-radius: 6px;
     border: none;
     display: flex;
@@ -110,6 +118,40 @@
     cursor: pointer;
     display: none;
 }
+
+/* Contenedor de sugerencias */
+.sugerencias {
+    position: absolute; /* Posición relativa al contenedor del buscador */
+    background-color: #1c2c3c; /* Mismo color de fondo que el buscador */
+    border: 1px solid rgb(75, 74, 74); /* Bordes similares a los del buscador */
+    max-height: 200px; /* Máxima altura para el scroll */
+    overflow-y: auto; /* Habilitar scroll si es necesario */
+    z-index: 1000; /* Asegurarse de que se muestre encima de otros elementos */
+    width: calc(42% - 20px); /* Ajuste del ancho para coincidir con el buscador */
+    border-radius: 6px; /* Bordes redondeados para coincidir con el buscador */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    padding: 0; /* Eliminar padding por defecto */
+    margin: 0; /* Eliminar margen por defecto */
+}
+
+/* Estilo de cada sugerencia */
+.sugerencia {
+    padding: 10px 15px; /* Espaciado interno similar al input */
+    color: #ffffff; /* Color de texto para coincidir con el input */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la sugerencia */
+    border-bottom: 1px solid rgb(75, 74, 74); /* Línea divisoria entre sugerencias */
+}
+
+/* Estilo de la última sugerencia sin borde inferior */
+.sugerencia:last-child {
+    border-bottom: none;
+}
+
+/* Cambio de fondo al pasar sobre la sugerencia */
+.sugerencia:hover {
+    background-color: #2a3a4a; /* Un poco más claro para indicar hover */
+}
+
 
 /* COMIENZO CON LA SECTION 2 */
 
@@ -363,4 +405,11 @@
 }
 .btnEnviar:hover{
     background-color: #44596d;
+}
+
+#mensajeExito{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
 }
